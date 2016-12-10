@@ -2,6 +2,7 @@
 
 
 (1). AndroidManifest.xml
+
     receiver tag 
     intent-filter tag : NAME android.appwidget.action.APPWIDGET.UPDATE
     meta-data tag : 
