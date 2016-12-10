@@ -2,10 +2,12 @@
 
 
 (1). AndroidManifest.xml
-
+    receiver tag 
+    intent-filter tag : NAME android.appwidget.action.APPWIDGET.UPDATE
+    meta-data tag : 
 <!--
 <receiver android:name=".appwidget">
-	intent-filter>
+	<intent-filter>
 		<action android:name="android.appwidget.action.APPWIDGET.UPDATE"/>
 	</intent-filter>
 	<meta-data android:name="android.appwidget.provider"
@@ -14,7 +16,8 @@
 -->
 
 (2). xml\appwidget-provider.xml
-
+	
+	initialLayout
 <!--
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
 	android:minHeight="72dp"
