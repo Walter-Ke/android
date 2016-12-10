@@ -1,8 +1,8 @@
 (1). AndroidManifest.xml
 
 <!--
-<receiver android:name=".appwidget">
-	<intent-filter>
+receiver android:name=".appwidget"
+	intent-filter>
 		<action android:name="android.appwidget.action.APPWIDGET.UPDATE"/>
 	</intent-filter>
 	<meta-data android:name="android.appwidget.provider"
