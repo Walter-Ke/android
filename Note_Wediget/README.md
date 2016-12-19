@@ -1,5 +1,11 @@
+
+
+
 (1). AndroidManifest.xml
 
+    receiver tag 
+    intent-filter tag : NAME android.appwidget.action.APPWIDGET.UPDATE
+    meta-data tag : 
 <!--
 <receiver android:name=".appwidget">
 	<intent-filter>
@@ -9,7 +15,10 @@
 			android:resource="@xml/appwidget_provider"/>
 </receiver>
 -->
+
 (2). xml\appwidget-provider.xml
+	
+	initialLayout
 <!--
 <appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
 	android:minHeight="72dp"
@@ -18,6 +27,8 @@
 	android:updatePeriodMills="0"
 	android:initialLayout="@layout/activity_main"/>
 -->
+
+
 (3). main.java
 	
 	@Override
