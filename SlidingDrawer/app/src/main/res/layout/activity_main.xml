@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tw.com.walter.slidingdrawer.MainActivity">
+
+    <Button android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 1"
+        android:layout_x="30px"
+        android:layout_y="50px"/>
+
+    <SlidingDrawer
+        android:id="@+id/slidingdrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:animateOnClick="true"
+        android:allowSingleTap="true"
+        android:handle="@+id/handle"
+        android:content="@+id/content"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:background="#0000FF"
+            android:id="@+id/handle"
+            >
+        </LinearLayout>
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            android:background="@color/colorAccent"
+            >
+            <Button android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 2"
+                android:layout_x="30px"
+                android:layout_y="90px"
+                />
+        </AbsoluteLayout>
+
+
+
+    </SlidingDrawer>
+
+
+</AbsoluteLayout>
