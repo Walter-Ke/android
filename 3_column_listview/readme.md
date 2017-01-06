@@ -3,17 +3,17 @@ Weather -> WeatherAdapter -> Listview </br>
 
 Weather:</br>
 
-  <blockquote>Weather</blockquote></br>
-  <blockquote>getTemperature</blockquote></br>
-  <blockquote>getSky</blockquote></br>
-  <blockquote>getCity</blockquote></br>
+  <ui>Weather</ui></br>
+  <ui>getTemperature</ui></br>
+  <ui>getSky</ui></br>
+  <ui>getCity</ui></br>
 
 
 WeatherAdapter: </br>
-  <blockquote>getCount</blockquote></br>
-  <blockquote>getItem</blockquote></br>
-  <blockquote>getItemId</blockquote></br>
-  <blockquote>getWeahterAdapterView</blockquote></br>
+  <ui>getCount</ui></br>
+  <ui>getItem</ui></br>
+  <ui>getItemId</ui></br>
+  <ui>getWeahterAdapterView</ui></br>
   
 
 Listview.setAdapter(weatherAdapter)
