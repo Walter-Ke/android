@@ -31,10 +31,14 @@ public class OverlappedLayout extends LinearLayout {
 		paint.setColor(Color.BLUE);
 	}
 
+	//ViewGroup, no background, call dispatchDraw()
+	//ViewGroup, background, call draw() include dispatchDraw()
 	@Override
 	protected void dispatchDraw(Canvas canvas) {
 
 		super.dispatchDraw(canvas);
+		//x, y from dispatchTouchEvent()
+		//paint circle radius = 30
 		canvas.drawCircle(x,y,30,paint);
 	}
 
@@ -43,6 +47,7 @@ public class OverlappedLayout extends LinearLayout {
 
 		x = (int)ev.getX();
 		y = (int)ev.getY();
+		//enforce to repaint view
 		this.invalidate();
 		return true;
 
